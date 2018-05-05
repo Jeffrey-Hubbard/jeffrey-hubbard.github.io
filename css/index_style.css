@@ -1,0 +1,26 @@
+h3 {
+	text-align: center;
+	font-size: 30px;
+	color: #003399;
+	text-shadow: 2px 2px 0 rgba(255, 153, 51, 0.5);
+}
+
+.jumbotron {
+	min-height: 100vh;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #CCCCCC;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #FF9933;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #FF9933;
+}
