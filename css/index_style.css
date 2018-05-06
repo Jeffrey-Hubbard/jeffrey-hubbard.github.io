@@ -7,14 +7,15 @@
 	--main-white: #FDFDFF;
 }
 
+body {
+	padding-top: 40px;
+} 
 
-
-/*h3 {
-	text-align: center;
-	font-size: 30px;
-	color: var(--main-blue-dark);
-	text-shadow: 2px 2px 0 white;
-} */
+h3 {
+	text-align: right;
+	font-size: 18px;
+	color: var(--main-white);
+}
 
 .jumbotron {
 	min-height: 100vh;
@@ -32,8 +33,6 @@
 	font-size: 30px;
 	color: var(--main-white);
 	text-shadow: black 0.1em 0.1em 0.2em ;
-	
-	
 }
 
 .navbar-inverse .navbar-brand {
@@ -50,7 +49,139 @@
 	color: var(--main-clay);
 }
 
+#home,
+#skills {
+	background-color: var(--main-blue-med);
+}
 
+.navigation-header {
+	padding-top: 60px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.wrap {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	/* This ensures that the images cannot
+		render outside of their container
+		without forcing any scrollbars */
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: var(--main-gray-dark);
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*==================================
+	GALLERY SECTION ANIMATION
+==================================*/
+
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+	overflow: hidden;
+	border-radius: 8px;
+	padding: 1px;
+	border: 1px solid #021A40;
+	background-color: var(--main-gray-light);
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: 300px;
+	height: 169px;
+}
+
+.photo-container img {
+	max-width: 100%;
+	width: auto;
+	height: 128px;
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.white-head {
+	color: #C9BDAA;
+	margin-top: 5%;
+}
+
+.overlay-text {
+	text-align: right;
+}
+
+/*====================================
+	PHOTO OVERLAY TRANSITIONS
+====================================*/
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.photo-overlay:hover {
+	opacity: .6;
+}
+
+.photo img {
+	transition: transform .5s;
+	transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+	transform: translate(-90px, 0px);
+}
+
+/*$(‘.nav a’).on(‘click’, function(){
+if ($(document).width() <= 767){
+$(".navbar-toggle").click();
+}
+}); */
 
 
 
