@@ -110,7 +110,6 @@ body {
 
 .photo {
 	position: relative;
-	line-height: 0;
 	margin-bottom: 2em;
 	overflow: hidden;
 	border-radius: 8px;
@@ -142,8 +141,6 @@ body {
 	left: 0;
 	padding-left: 20px;
 	padding-right: 20px;
-	justify-content: center;
-	align-items: center;
 	background: rgba(0, 0, 0, 0.5);
 }
 
@@ -152,21 +149,18 @@ body {
 	margin-top: 5%;
 }
 
-.overlay-text {
-	text-align: center;
-	display: table-cell;
-	vertical-align: top;
-
-	line-height: normal;
-
-}
-
 .overlay-text-box {
-	float: right;
-	display: table;
+	float: right !important;
 	max-width: 65%;
 	height: 100%;
 	line-height: normal;
+}
+
+.overlay-text {
+	text-align: center;
+	vertical-align: top;
+	line-height: normal;
+
 }
 
 .more-button {
