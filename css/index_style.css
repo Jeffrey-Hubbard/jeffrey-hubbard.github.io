@@ -156,7 +156,7 @@ body {
 	text-align: center;
 	display: table-cell;
 	vertical-align: top;
-	
+
 	line-height: normal;
 
 }
@@ -166,6 +166,7 @@ body {
 	display: table;
 	max-width: 65%;
 	height: 100%;
+	line-height: normal;
 }
 
 .more-button {
