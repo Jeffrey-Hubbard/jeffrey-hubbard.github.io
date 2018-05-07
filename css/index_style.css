@@ -7,6 +7,15 @@
 	--main-white: #FDFDFF;
 }
 
+html {
+	--main-blue-dark: #0F0D22;
+	--main-blue-med: #36464F;
+	--main-clay: #764134;
+	--main-gray-dark: #424342;
+	--main-gray-light: #4C504F;
+	--main-white: #FDFDFF;
+}
+
 body {
 	padding-top: 40px;
 } 
@@ -97,7 +106,7 @@ h3 {
 	padding: 0px;
 	border-radius: 8px;
 	margin: 0px auto;
-	background-color: var(--main-gray-dark);
+	background-color: #424342;
 	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
