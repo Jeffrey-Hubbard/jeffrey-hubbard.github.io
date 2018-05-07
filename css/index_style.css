@@ -1,4 +1,4 @@
-:root {
+element {
 	--main-blue-dark: #0F0D22;
 	--main-blue-med: #36464F;
 	--main-clay: #764134;
@@ -16,12 +16,9 @@ html {
 	--main-white: #FDFDFF;
 }
 
-body {
-	padding-top: 40px;
-} 
-
 .jumbotron {
 	min-height: 100vh;
+	z-index: -2;
 }
 
 .navbar-inverse {
@@ -36,6 +33,7 @@ body {
 	font-size: 30px;
 	color: var(--main-white);
 	text-shadow: black 0.1em 0.1em 0.2em ;
+	z-index: -1;
 }
 
 .navbar-inverse .navbar-brand {
@@ -79,19 +77,6 @@ body {
 	margin-right: -15px;
 	margin-left: -15px;
 }
-
-/*.wrap {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	/* This ensures that the images cannot
-		render outside of their container
-		without forcing any scrollbars
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	text-align: center;
-} no longer used */
 
 .flex-container {
 	display: -webkit-flex;
@@ -207,6 +192,45 @@ $(".navbar-toggle").click();
 }
 }); */
 
+.contact-container {
+	width: 100%;
+	height: 70vh;
+	margin: 0 auto;
+	background: url('../images/personal-3286016_1920.jpg') no-repeat center center fixed;
+	/* background-size: 100% 100%; */
+	object-fit: cover;
+	position: relative;
+}
 
+.placeholder-text { /* Used for new sections not implemented */
+	font-size: 30px;
+	color: var(--main-white);
+	text-shadow: black 0.1em 0.1em 0.2em ;
+	text-align: center;
+}
 
+#contactme-text {
+	font-size: 30px;
+	color: var(--main-white);
+	text-shadow: black 0.1em 0.1em 0.2em ;
+	position: relative;
+	text-align: center;
+	top: 49px;
+}
 
+.contact-card-group {
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top: 40%;
+	left: 0;
+}
+
+.contact-card {
+	cursor: pointer;
+}
+
+.contact-card:hover {
+	opacity: 0.7;
+}
