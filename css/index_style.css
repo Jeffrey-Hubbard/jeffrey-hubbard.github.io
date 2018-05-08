@@ -17,8 +17,8 @@ html {
 }
 
 .jumbotron {
-	min-height: 100vh;
-	/* z-index: -2; */
+	height: 100vh;
+	
 }
 
 .navbar-inverse {
@@ -33,7 +33,6 @@ html {
 	font-size: 30px;
 	color: var(--main-white);
 	text-shadow: black 0.1em 0.1em 0.2em ;
-	/* z-index: -1; */
 }
 
 .navbar-inverse .navbar-brand {
