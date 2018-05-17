@@ -205,7 +205,7 @@ html {
 	width: 100%;
 	height: 70vh;
 	margin: 0 auto;
-	background: url('../images/personal-3286016_1920.jpg') no-repeat center center fixed;
+	background: url('../images/contact-web.jpg') no-repeat center center fixed;
 	/* background-size: 100% 100%; */
 	object-fit: cover;
 	position: relative;
@@ -310,4 +310,23 @@ html {
 
 .portfolio-card-body {
 	padding-bottom: 20%;
+}
+
+
+/*======================================
+	MEDIA QUERIES
+======================================*/
+
+@media only screen and (max-width: 768px) {
+	.jumbotron {
+		background-image: url(../images/computer-and-coffee_mobile.jpg);
+	}
+
+	.contact-container {
+		background: url('../images/contact-web_mobile.jpg') no-repeat center center fixed;
+	}
+
+	.portfolio-container {
+		background-image: url('../images/create_mobile.jpg');
+	}
 }
