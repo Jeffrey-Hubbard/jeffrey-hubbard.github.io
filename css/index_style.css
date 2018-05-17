@@ -319,14 +319,15 @@ html {
 
 @media only screen and (max-width: 768px) {
 	.jumbotron {
-		background-image: url(../images/computer-and-coffee_mobile.jpg);
+		background: url(../images/computer-and-coffee_mobile.jpg) no-repeat bottom right
+		scroll;
 	}
 
 	.contact-container {
-		background: url('../images/contact-web_mobile.jpg') no-repeat center center fixed;
+		background: url('../images/contact-web_mobile.jpg') no-repeat center center scroll;
 	}
 
 	.portfolio-container {
-		background-image: url('../images/create_mobile.jpg');
+		background: url('../images/create_mobile.jpg') no-repeat top right scroll;
 	}
 }
