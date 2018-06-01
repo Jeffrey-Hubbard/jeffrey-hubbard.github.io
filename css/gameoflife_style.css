@@ -1,0 +1,342 @@
+element {
+	--main-blue-dark: #0F0D22;
+	--main-blue-med: #36464F;
+	--main-clay: #764134;
+	--main-gray-dark: #424342;
+	--main-gray-light: #4C504F;
+	--main-white: #FDFDFF;
+	--main-yellow: #FEAF16;
+}
+
+html {
+	--main-blue-dark: #0F0D22;
+	--main-blue-med: #36464F;
+	--main-clay: #764134;
+	--main-gray-dark: #424342;
+	--main-gray-light: #4C504F;
+	--main-white: #FDFDFF;
+	--main-yellow: #FEAF16;
+}
+
+.jumbotron {
+	min-height: 100vh;
+	max-height: 100%;
+	background-image: url(../images/computer-and-coffee.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+	background-attachment: fixed;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+.navbar-inverse {
+	background-color: var(--main-blue-med);
+}
+
+.center {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	font-size: 30px;
+	color: var(--main-white);
+	text-shadow: black 0.1em 0.1em 0.2em ;
+}
+
+.navbar-inverse .navbar-brand {
+	color: var(--main-white);
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+	color: var(--main-blue-dark); /* var(--main-blue-light) */
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav .nav-link:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: var(--main-yellow);
+}
+
+#home,
+#skills {
+	background-color: var(--main-blue-med);
+}
+
+.navigation-header {
+	padding-top: 60px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: #424342;
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contactme a {
+	position: absolute;
+	right: 2.5%;
+	bottom: 5%;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.contactme:hover {
+	opacity: 0.7;
+}
+
+/*==================================
+	GALLERY SECTION ANIMATION
+==================================*/
+
+.photo {
+	position: relative;
+	margin-bottom: 2em;
+	overflow: hidden;
+	border-radius: 8px;
+	padding: 1px;
+	border: 1px solid #021A40;
+	background-color: var(--main-gray-light);
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: 300px;
+	height: 169px;
+}
+
+.photo-container img {
+	max-width: 100%;
+	width: auto;
+	height: 128px;
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.white-head {
+	color: #C9BDAA;
+	margin-top: 5%;
+}
+
+.overlay-text-box {
+	float: right !important;
+	max-width: 65%;
+	height: 100%;
+	line-height: normal;
+}
+
+.overlay-text {
+	text-align: center;
+	vertical-align: top;
+	line-height: normal;
+
+}
+
+.more-button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+}
+
+/*====================================
+	PHOTO OVERLAY TRANSITIONS
+====================================*/
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.photo-overlay:hover {
+	opacity: .6;
+}
+
+.photo img {
+	transition: transform .5s;
+	transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+	transform: translate(-90px, 0px);
+}
+
+
+
+.contact-container {
+	width: 100%;
+	height: 70vh;
+	margin: 0 auto;
+	background: url('../images/contact-web.jpg') no-repeat center center fixed;
+	/* background-size: 100% 100%; */
+	object-fit: cover;
+	position: relative;
+}
+
+.placeholder-text { /* Used for new sections not implemented */
+	font-size: 30px;
+	color: var(--main-white);
+	text-shadow: black 0.1em 0.1em 0.2em ;
+	text-align: center;
+}
+
+#contact-text {
+	font-size: 30px;
+	color: var(--main-white);
+	text-shadow: black 0.1em 0.1em 0.2em ;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.contact-card-group {
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top: 40%;
+	left: 0;
+	background-color: #424342;
+}
+
+.contact-card-surround {
+	background-color: #424342;
+}
+
+.contact-card {
+	cursor: pointer;
+
+}
+
+.contact-card:hover {
+	opacity: 0.7;
+}
+
+.contact-card-body {
+	height: 100%;
+}
+
+.portfolio-card-group {
+	width: 100%;
+	margin: 0px;
+	padding: 10px;
+	top: 40%;
+	left: 0;
+	background-color: transparent;
+	border-radius: 8px;
+}
+
+.portfolio-card-image {
+	width: 100%;
+	height: 20vw;
+	object-fit: cover;
+	position: relative;
+	margin-bottom: 2em;
+	overflow: hidden;
+
+	padding: 1px;
+	border: 1px solid #021A40;
+	background-color: var(--main-gray-light);
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+	border-radius: 8px;
+}
+
+.portfolio-card {
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+
+	color: var(--main-blue-dark);
+}
+
+.card-footer {
+	color: var(--main-white);
+	background-color: var(--main-gray-light);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.portfolio-container {
+	height: 77%;
+	width: 100%;
+	margin: 0px;
+	background-image: url('../images/create.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+.portfolio-card-body {
+	padding-bottom: 20%;
+}
+
+
+/*======================================
+	MEDIA QUERIES
+======================================*/
+
+@media only screen and (max-width: 768px) {
+	.jumbotron {
+		background: url(../images/computer-and-coffee_mobile.jpg) no-repeat bottom right
+		scroll;
+	}
+
+	.contact-container {
+		background: url('../images/contact-web_mobile.jpg') no-repeat center center scroll;
+	}
+
+	.portfolio-container {
+		background: url('../images/create_mobile.jpg') no-repeat top right scroll;
+	}
+}
+
+/*======================================
+	Game of Life
+======================================*/
+
+#gameBoard {
+	height: 100%;
+	width: 100%;
+}
