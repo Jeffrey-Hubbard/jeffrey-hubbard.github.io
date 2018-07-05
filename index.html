@@ -44,9 +44,6 @@
 								<a class="nav-link" href="#skills">Skills</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#projects">Projects</a>
-							</li>
-							<li class="nav-item">
 								<a class="nav-link" href="#portfolio">Portfolio</a>
 							</li>
 							<li class="nav-item">
@@ -248,21 +245,6 @@
 				</section>
 	    	<!-- /Skills -->
 
-	    	<!-- Projects -->
-	    		<section id="projects" class="navigation-header">
-	    			<div class="placeholder-text">
-	    				Projects:
-	    				<br />
-	    				<br />
-	    				<br />
-	    				<br />
-	    				<br />
-	    				<br />
-	    				<br />
-	    			</div>
-	    		</section>
-	    	<!-- /Projects -->
-
 	    	<!-- Portfolio -->
 	    		<section id="portfolio" class="navigation-header">
 	    			<div class="container-fluid portfolio-container">
@@ -272,13 +254,15 @@
 						<div class="card-group portfolio-card-group">
 							<div class="col-md-4">	
 								<div class="card portfolio-card">
-									<img class="card-img-top portfolio-card-image" src="./images/photographer.jpeg" alt="Card image cap">
+									<a href="./liveproject.html">
+										<img class="card-img-top portfolio-card-image" src="./images/CalendarCode.PNG" alt="Card image cap">
+									</a>
 									<div class="card-body portfolio-card-body">
-										<h5 class="card-title">Big Eye Photography</h5>
-										<p class="card-text">Beautiful photography, on a website stuck in the 1990's. Redesigned for a responsive, modern look to drive business and drive their professional brand.</p>
+										<h5 class="card-title">Tech Academy - Live Project</h5>
+										<p class="card-text">Capstone project at The Tech Academy. ASP.NET MVC Project with Agile/Scrum development. Click the picture to learn more.</p>
 									</div>
 									<div class="card-footer">
-										<small class="text-muted">HTML5, CSS3, jQuery</small>
+										<small>C#, JavaScript, jQuery, HTML5, CSS3, jQuery</small>
 									</div>
 								</div>
 							</div>
@@ -290,7 +274,7 @@
 										<p class="card-text">Beautiful tours, with a website stuck in the 1990's. Redesigned for a responsive, modern look to drive business and drive their professional brand.</p>
 									</div>
 									<div class="card-footer">
-										<small class="text-muted">HTML5, CSS3, jQuery</small>
+										<small>HTML5, CSS3, jQuery</small>
 									</div>
 								</div>
 							</div>
@@ -302,7 +286,7 @@
 										<p class="card-text">Functional widgets, with a website stuck in the 1990's. Redesigned for a beautiful, responsive, modern look to drive business and drive their professional brand.</p>
 									</div>
 									<div class="card-footer">
-										<small class="text-muted">HTML5, CSS3, jQuery</small>
+										<small>HTML5, CSS3, jQuery</small>
 									</div>
 								</div>
 							</div>
@@ -312,7 +296,7 @@
 	    	<!-- /Portfolio -->
 
 	    	<!-- Experience -->
-	    		<section id="experience" class="navigation-header">
+<!-- 	    		<section id="experience" class="navigation-header">
 	    			<div class="placeholder-text">
 	    				Experience:
 	    				<br />
@@ -325,7 +309,7 @@
 
 	    				
 	    			</div>
-	    		</section>
+	    		</section> -->
 	    	<!-- /Experience -->
 
 	    	<!-- Contact -->
@@ -365,10 +349,7 @@
 	    	<!-- Footer -->
 
 	    	<!-- /Footer -->
-	    		
-
-
-	     
+	    		     
 		<!-- /Page Content -->
 	   
 	    <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -377,6 +358,7 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 	    <script type="text/javascript">
+	    	
 	    	$(document).ready(function() {
 	    		$('a.nav-link').click(function() {
 	    			$('.navbar-collapse').collapse('hide');

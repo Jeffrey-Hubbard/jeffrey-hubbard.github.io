@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118877871-1"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-118877871-1');
+			</script>
+    	<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!-- Title -->
+	    <title>Jeffrey Hubbard</title>
+	    <!-- Icon -->
+	    <link rel="shortcut icon" type="image/png" href="./images/feather.png">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	    <!-- FontAwesome -->
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <!-- Site specific CSS -->
+	    <link rel="stylesheet" type="text/css" href="./css/liveproject_style.css">
+	  </head>
+	<body id="home">
+		<!-- Page Content -->
+  		
+	    	<!-- Navigation -->
+				<nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse">
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="./index.html#home">
+						<img src="./images/feather.png" width="30" height="30" alt="">
+						Jeffrey Hubbard
+					</a>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html#skills">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html#experience">Experience</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					
+					</div>
+				</nav>
+	    	
+	    	<!-- /Navigation -->
+
+	    	<!-- Jumbotron -->
+	    		<div class="jumbotron container-fluid px-0 mx-0">
+					<div class="center">
+						<h2>Tech Academy - Live Project</h2>
+					</div>
+
+					<div class="contactme">
+						<a href="https://www.linkedin.com/in/jeffrey-hubbard">
+							<img src="./images/Linkedin_icon_128.png" alt="Connect on LinkedIn">
+						</a>
+					</div>
+
+				</div>
+	    	<!-- /Jumbotron -->
+
+	    	<!-- First Card Set -->
+	    		<div class="container-fluid pb-4 px-4">
+	    			<div class="row">
+		    			<div class="col-md-8 image-card">
+		    				<h2 class="customheader">Project and Methodology Overview</h2>
+		    				<p>Our Live Project is a web-based application for tracking schedules, time-off, and clock-ins and -outs.<br/><br/>
+		    				The project is built as an ASP.NET MVC application, with development done in Visual Studio. Version Control and Backlog tickets/tasks were handled through a Team Foundation Services (TFS) server.<br/><br/>
+							Development included Code-First database design with several migrations, C# (including Razor syntax), LINQ database queries, JavaScript, JQuery, HTML5, CSS3.<br/><br/>
+							Implementation direction was worked through during a Scrum, with a Scum Master generating tickets to track completion.<br/><br/>
+							Upon completion of our Sprint, I acted as Scrum Master for the next Sprint, writing up tickets after our Scrum planning session to assist the next cycle of developers keep their tasks organized and tracked.
+							</p>
+							<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/" role="button">View Source Code Snippets and Extended Summary</a>
+		    			</div>
+		    			<div class="col-md-4 image-card">
+		    				<img src="./images/whiteboard.png">
+		    			</div>
+	    			</div>
+	    		</div>
+	    	<!-- /First Card Set -->
+
+	    	<!-- Second Card Set -->
+	    		<div class="container-fluid pb-4 px-4">
+	    			<div class="row section-row">
+		    			<div class="col-md-4 image-card">
+		    				<img src="./images/myrole.png">
+		    			</div>
+		    			<div class="col-md-8 image-card">
+		    				<h2 class="customheader">My Role</h2>
+		    				<p>
+		    					My focus in the project was to build and integrate the user schedule functions, including the controller and views to handle creation and saving of user schedules as well as the process for transforming both lists of Events (from the TimeOffEvent and WorkTimeEvent (aka clock-in and clock-out) to serialized JSON objects to be read and rendered by the calendar package FullCallendar.
+		    				</p>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/" role="button">View Source Code Snippets and Extended Summary</a>
+		    			</div>
+	    			</div>
+	    		</div>
+	    	<!-- /Second Card Set -->
+
+	    	<!-- Third Card Set -->
+	    		<div class="container-fluid pb-4 px-4">
+	    			<div class="row section-row">
+		    			<div class="col-md-8 image-card">
+		    				<h2 class="customheader">Models and ViewModels</h2>
+		    				<p>
+		    					Our Live Project used an Entity Framework Code-First database to store our user, event, and schedule data. As a result, the initial project creation including some basic, first-pass models and scaffolding, as is easily done when developing an MVC Application in Visual Studio.<br/><br/>Once we got into our Scrum, we realized some of the initial model decisions no longer fit with the needs of our application and our Product Owner. As a result, I made a number of changes to the Schedule and WorkPeriod models and designed the Schedule ViewModel to fit our new needs, as expected in Agile development.
+		    				</p>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Models-ViewModels" role="button">View Source Code Snippets and Extended Summary</a>
+		    			</div>
+		    			<div class="col-md-4 image-card">
+		    				<img src="./images/viewmodel.png">
+		    			</div>
+	    			</div>
+	    		</div>
+	    	<!-- /Third Card Set -->
+
+	    	<!-- Fourth Card Set -->
+	    		<div class="container-fluid pb-4 px-4">
+	    			<div class="row section-row">
+	    				<div class="col-md-4 image-card">
+		    				<img src="./images/schedule.png">
+		    			</div>
+		    			<div class="col-md-8 image-card">
+		    				<h2 class="customheader">Schedule Creation View</h2>
+		    				<p>
+		    					The initial implementation of the Schedule Create page was to generate the intial schedule for a new user right after the user was created by an administrator.<br/><br/>This page made extensive use of Razor syntax and especially HTML Helpers to create and populate the various inputs, whether from default data (the start schedule day is initially set to the hire date entered by the administrator) or from user entry. It also made Model Binding to the ViewModel created on form submission very easy.<br/><br/>The ViewModel on construction has a default number of initial WorkPeriods (7) and an default maximum schedule length (14), which are used to create the series of WorkPeriod input rows. Updating the number of rows either by changing the schedule length from a drop-down menu or by clicking the 'add one more row' button at the bottom reloads the page with the new number of WorkPeriods, keeping existing user entries through Model Binding and passing the ViewModel back to the view.
+		    				</p>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Schedule-Create" role="button">View Source Code Snippets and Extended Summary</a>
+		    			</div>
+	    			</div>
+	    		</div>
+	    	<!-- /Fourth Card Set -->
+
+	    	<!-- Fifth Card Set -->
+	    		<div class="container-fluid pb-4 px-4">
+	    			<div class="row section-row">
+		    			<div class="col-md-8 image-card">
+		    				<h2 class="customheader">DatePickers and TimePickers</h2>
+		    				<p>
+		    					Since our project needed to track time as well as date, the decision was made prior to my inclusion in the project to use an external library for a datetimepicker to extend the standard jQuery datepicker. When we needed only dates, we used the standard jQuery datepicker. I handled incorporation of these pickers in several locations, including schedule start and end dates (datepicker only) and work period start and end dates/times (datetimepicker).<br/><br/>In all cases, we sought to restrain the user's input to logical choices, for ease of use and to ensure the quality and integrity of the data submitted to the data base.<br/><br/>Handling these dynamic changes required significant work in jQuery and JavaScript to set and change the limitations of each picker, especially the pickers that were generated dynamically based on the schedule length.
+		    				</p>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/datetimepicker-input-constraints" role="button">View Source Code Snippets and Extended Summary</a>
+		    			</div>
+		    			<div class="col-md-4 image-card">
+		    				<img src="./images/datepicker.png">
+		    			</div>
+	    			</div>
+	    		</div>
+	    	<!-- /Fifth Card Set -->
+
+	    	<!-- Sixth Card Set -->
+	    		<div class="container-fluid pb-4 px-4">
+	    			<div class="row section-row">
+	    				<div class="col-md-4 image-card">
+		    				<img src="./images/calendar.png">
+		    			</div>
+		    			<div class="col-md-8 image-card">
+		    				<h2 class="customheader">Calendar Helper Method</h2>
+		    				<p>
+		    					The function of the Calendar class is to transform our user/event/schedule data into JSON serialized data we can display on the calendar library FullCalendar.<br/><br/>Our team decided in Scrum that the best implementation route for our Calendar class was a static class, as a helper.<br/><br/>The Calendar needed two basic methods to become functional. Both methods needed to return JSON serialized objects, each of which is an event that FullCalendar can parse and display. One would take a list of Events, the other would create a list of Events from a Schedule and date range.<br/><br/>Once that list is completely populated, it is serialized and returned to the calling method. The goal accomplished by doing that ensures that no matter which form of data is send to the Calendar helper, the return data is essentially the same.
+		    				</p>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Calendar-Helper" role="button">View Source Code Snippets and Extended Summary</a>
+		    			</div>
+	    			</div>
+	    		</div>
+	    	<!-- /Sixth Card Set -->
+
+
+
+
+
+
+
+
+	    	<!-- Contact -->
+	    		<section id="contact" class="navigation-header">
+	    			<div class="container-fluid contact-container">
+	    				<div class="card-group contact-card-group">
+	    					<div class="card card-inverse contact-card-surround">
+	    						<a href="https://www.linkedin.com/in/jeffrey-hubbard/">
+	    							<img class="card-img-top mx-auto d-block contact-card" src="./images/Linkedin_icon_128.png" style="width: 128px;" alt="Card image cap">
+	    						</a>
+	    						<div class="card-body">
+	    							<h5 class="card-title"></h5>
+	    							<p class="card-text"></p>
+	    						</div>
+	    					</div>
+	    					<div class="card card-inverse contact-card-surround">
+	    						<div class="card-body contact-card-body d-flex">
+	    							<h5 class="card-title my-auto mx-auto" id="contact-text">Connect with me!</h5>
+	    							<p class="card-text"></p>
+	    						</div>
+	    					</div>
+	    					<div class="card card-inverse contact-card-surround">
+	    						<a href="https://github.com/Jeffrey-Hubbard">
+	    							<img class="card-img-top mx-auto d-block contact-card" src="./images/GitHub_Logo_White.png" style="width: 312px;" alt="Card image cap">
+	    						</a>
+	    						<div class="card-body">
+	    							<h5 class="card-title"></h5>
+	    							<p class="card-text"></p>
+	    						</div>
+	    					</div>
+
+	    				</div>
+	    			</div>
+	    		</section>
+	    	<!-- /Contact -->
+    	<!-- /Page Content -->
+
+	    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	    <script type="text/javascript">
+
+
+
+
+	    </script>
+	</body>
+</html>
