@@ -321,6 +321,9 @@ html {
 ======================================*/
 
 @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
 	.jumbotron {
 		background: url(../images/computer-and-coffee_mobile.jpg) no-repeat bottom right
 		scroll;
@@ -332,5 +335,17 @@ html {
 
 	.portfolio-container {
 		background: url('../images/create_mobile.jpg') no-repeat top right scroll;
+	}
+
+	.portfolio-card img {
+		height: 50vh;
+	}
+
+	.portfolio-row {
+		padding-bottom: 0;
+	}
+
+	.col-md-4 {
+		padding-bottom: 10%;
 	}
 }
