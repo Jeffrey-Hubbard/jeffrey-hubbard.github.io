@@ -337,6 +337,21 @@ html {
 ======================================*/
 
 #gameBoard {
-	height: 100%;
-	width: 100%;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+#gameBoard canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
 }

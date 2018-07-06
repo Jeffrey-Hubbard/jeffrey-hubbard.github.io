@@ -85,7 +85,7 @@
 							Implementation direction was worked through during a Scrum, with a Scum Master generating tickets to track completion.<br/><br/>
 							Upon completion of our Sprint, I acted as Scrum Master for the next Sprint, writing up tickets after our Scrum planning session to assist the next cycle of developers keep their tasks organized and tracked.
 							</p>
-							<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/" role="button">View Source Code Snippets and Extended Summary</a>
+							<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/" role="button">View Code Snippets and Extended Summary</a>
 		    			</div>
 		    			<div class="col-md-4 image-card">
 		    				<img src="./images/whiteboard.png">
@@ -105,7 +105,7 @@
 		    				<p>
 		    					My focus in the project was to build and integrate the user schedule functions, including the controller and views to handle creation and saving of user schedules as well as the process for transforming both lists of Events (from the TimeOffEvent and WorkTimeEvent (aka clock-in and clock-out) to serialized JSON objects to be read and rendered by the calendar package FullCallendar.
 		    				</p>
-		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/" role="button">View Source Code Snippets and Extended Summary</a>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/" role="button">View Code Snippets and Extended Summary</a>
 		    			</div>
 	    			</div>
 	    		</div>
@@ -119,7 +119,7 @@
 		    				<p>
 		    					Our Live Project used an Entity Framework Code-First database to store our user, event, and schedule data. As a result, the initial project creation including some basic, first-pass models and scaffolding, as is easily done when developing an MVC Application in Visual Studio.<br/><br/>Once we got into our Scrum, we realized some of the initial model decisions no longer fit with the needs of our application and our Product Owner. As a result, I made a number of changes to the Schedule and WorkPeriod models and designed the Schedule ViewModel to fit our new needs, as expected in Agile development.
 		    				</p>
-		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Models-ViewModels" role="button">View Source Code Snippets and Extended Summary</a>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Models-ViewModels" role="button">View Code Snippets and Extended Summary</a>
 		    			</div>
 		    			<div class="col-md-4 image-card">
 		    				<img src="./images/viewmodel.PNG">
@@ -139,7 +139,7 @@
 		    				<p>
 		    					The initial implementation of the Schedule Create page was to generate the intial schedule for a new user right after the user was created by an administrator.<br/><br/>This page made extensive use of Razor syntax and especially HTML Helpers to create and populate the various inputs, whether from default data (the start schedule day is initially set to the hire date entered by the administrator) or from user entry. It also made Model Binding to the ViewModel created on form submission very easy.<br/><br/>The ViewModel on construction has a default number of initial WorkPeriods (7) and an default maximum schedule length (14), which are used to create the series of WorkPeriod input rows. Updating the number of rows either by changing the schedule length from a drop-down menu or by clicking the 'add one more row' button at the bottom reloads the page with the new number of WorkPeriods, keeping existing user entries through Model Binding and passing the ViewModel back to the view.
 		    				</p>
-		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Schedule-Create" role="button">View Source Code Snippets and Extended Summary</a>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Schedule-Create" role="button">View Code Snippets and Extended Summary</a>
 		    			</div>
 	    			</div>
 	    		</div>
@@ -153,7 +153,7 @@
 		    				<p>
 		    					Since our project needed to track time as well as date, the decision was made prior to my inclusion in the project to use an external library for a datetimepicker to extend the standard jQuery datepicker. When we needed only dates, we used the standard jQuery datepicker. I handled incorporation of these pickers in several locations, including schedule start and end dates (datepicker only) and work period start and end dates/times (datetimepicker).<br/><br/>In all cases, we sought to restrain the user's input to logical choices, for ease of use and to ensure the quality and integrity of the data submitted to the data base.<br/><br/>Handling these dynamic changes required significant work in jQuery and JavaScript to set and change the limitations of each picker, especially the pickers that were generated dynamically based on the schedule length.
 		    				</p>
-		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/datetimepicker-input-constraints" role="button">View Source Code Snippets and Extended Summary</a>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/datetimepicker-input-constraints" role="button">View Code Snippets and Extended Summary</a>
 		    			</div>
 		    			<div class="col-md-4 image-card">
 		    				<img src="./images/datepicker.png">
@@ -173,7 +173,7 @@
 		    				<p>
 		    					The function of the Calendar class is to transform our user/event/schedule data into JSON serialized data we can display on the calendar library FullCalendar.<br/><br/>Our team decided in Scrum that the best implementation route for our Calendar class was a static class, as a helper.<br/><br/>The Calendar needed two basic methods to become functional. Both methods needed to return JSON serialized objects, each of which is an event that FullCalendar can parse and display. One would take a list of Events, the other would create a list of Events from a Schedule and date range.<br/><br/>Once that list is completely populated, it is serialized and returned to the calling method. The goal accomplished by doing that ensures that no matter which form of data is send to the Calendar helper, the return data is essentially the same.
 		    				</p>
-		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Calendar-Helper" role="button">View Source Code Snippets and Extended Summary</a>
+		    				<a class="btn btn-secondary" href="https://github.com/Jeffrey-Hubbard/Tech-Academy-Projects/tree/master/Live-Project-Snippets/Calendar-Helper" role="button">View Code Snippets and Extended Summary</a>
 		    			</div>
 	    			</div>
 	    		</div>
