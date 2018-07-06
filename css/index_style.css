@@ -282,7 +282,6 @@ html {
 .portfolio-card {
 	height: 100%;
 	background-color: rgba(255, 255, 255, 0.7);
-
 	color: var(--main-blue-dark);
 }
 
@@ -310,6 +309,10 @@ html {
 
 .portfolio-card-body {
 	padding-bottom: 20%;
+}
+
+.portfolio-row {
+	padding-bottom: 10%
 }
 
 
