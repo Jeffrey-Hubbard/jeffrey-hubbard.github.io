@@ -126,7 +126,7 @@
 }
 
 .quote-card-out {
-	box-shadow: 3px 3px 5px 6px rgba(75, 75, 76, 20);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2), 5px -5px 5px rgba(0,0,0,0.2);
 	background-color: #9A8C98;
 }
 
