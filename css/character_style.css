@@ -1,0 +1,221 @@
+@font-face {
+	font-family: "Exocet_Light";
+	src: url('../fonts/Exocet-Light_16428.ttf');
+}
+
+.psfont {
+	font-family: "Exocet_Light";
+}
+
+.navbar-light {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 99999;
+	background-color: transparent !important;
+}
+
+.top-buffer {
+	margin-top: 115px;
+}
+
+.bg-pic {
+	height: 100vh;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: "#B04525";
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#home {
+	background-image: url(../images/sigil_and_spire.jpg);
+	background-repeat: no-repeat;	
+}
+
+.overlay-section {
+	margin-bottom: 0;
+}
+
+.filler-section {
+	height: calc(100% - 5px);
+	padding-bottom: 5px;
+	background-color: #4C504F;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.2), 0px -5px 5px rgba(0,0,0,0.2);
+	text-align: center;
+	padding-right: 20%;
+	padding-left: 20%;
+	margin-bottom: 0;
+}
+
+#woman {
+	background-color: #4A4B4C;
+}
+
+.woman-container {
+	position: relative;
+
+}
+
+.woman-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.woman-overlay h1 {
+	color: red;
+}
+
+#woman-pic {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+	display: block;
+	width: auto;
+	background-image: url(../images/ghost.jpg);
+	background-size: contain;
+}
+
+.woman-animation {
+	animation: fadeOut 4s linear 1 forwards;
+	-webkit-animation: fadeOut 4s linear 1 forwards;
+}
+
+.red-text {
+	color: red;
+}
+
+#asylum {
+	height: 50vw;
+	background-image: url(../images/gatehouse.jpg);
+	background-size: contain;
+	background-color: #4A4B4C;
+}
+
+#streets {
+	background-image: url(../images/sigil_street.jpg);
+	background-size: contain;
+	background-position: left top;
+	background-color: #4A4B4C;
+}
+
+.quote-row {
+	height: auto;
+	margin-top: 5px;
+	margin-bottom: 7px;
+
+}
+
+.quote-card {
+	width: 80%;
+	height: 100%;
+	text-align: center;
+}
+
+.quote-card p {
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 2vh;
+	padding-bottom: 5px
+}
+
+.quote-card-out {
+	box-shadow: 3px 3px 5px 6px rgba(75, 75, 76, 20);
+	background-color: #9A8C98;
+}
+
+.quote-card-in {
+	box-shadow: inset 0 0 10px #000000;
+	background-color: #4A4E69;
+	color: white;
+}
+
+.chandler {
+
+}
+
+.stranger {
+
+}
+
+#bariaur {
+	background-image: url(../images/bariaur.jpg);
+	background-size: contain;
+	background-position: right top;
+	background-color: #4A4B4C;
+}
+#torment {
+	background-image: url(../images/torment.jpg);
+	background-size: contain;
+	background-color: black;
+}
+
+
+#daffodils {
+	position: absolute;
+	top: 40%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	-webkit-animation: fadeIn 9s ease-out 1;
+    animation: fadeIn 9s ease-out 1;
+    animation-iteration-count:  ;
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 9s ease-out 1 forwards;
+    animation: fadeIn 9s ease-out 1 forwards;
+    animation-iteration-count: 1;
+}
+
+.fadeDelay2 {
+	opacity: 0;
+	animation-delay: 2s;
+}
+
+.fadeDelay3 {
+	opacity: 0;
+	animation-delay: 3s;
+}
+
+.fadeDelay5 {
+	opacity: 0;
+	animation-delay: 5s;
+}
+
+@-webkit-keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% {opacity: 0; }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOut {
+  0% { opacity: 1; }
+  100% {opacity: 0.01; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% {opacity: 0.01; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% {opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% {opacity: 1; }
+}
