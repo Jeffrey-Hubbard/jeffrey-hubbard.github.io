@@ -7,6 +7,14 @@
 	font-family: "Exocet_Light";
 }
 
+.handwritten {
+	font-family: 'Homemade Apple', cursive;
+}
+
+.debatefont {
+	font-family: 'Rock Salt', cursive;
+}
+
 .navbar-light {
 	position: absolute;
 	top: 0;
@@ -22,6 +30,7 @@
 
 .bg-pic {
 	height: 100vh;
+	width: 100vw;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -32,13 +41,101 @@
 }
 
 #home {
+	height: 100%;
+}
+
+#sigil {
 	background-image: url(../images/sigil_and_spire.jpg);
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+	background-size: cover;	
+	position: relative;
+	height: auto;
 }
 
 .overlay-section {
 	margin-bottom: 0;
+
 }
+
+.gray-overlay {
+/*	width: auto;*/
+	height: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+/*	background-color: #4C504F;*/
+/*	box-shadow: 0px 5px 8px rgba(0,0,0,0.2), 0px -5px 8px rgba(0,0,0,0.2);*/
+	text-align: center;
+/*	padding-right: 10%;
+	padding-left: 10%;*/
+/*	margin-bottom: 0;*/
+}
+
+.box {
+
+	width: 300px;
+	background: white;
+	padding: 10px;
+	text-align: center;
+	font-weight: 900;
+	color: black;
+	position:relative;
+	box-shadow: 0px 5px 8px rgba(0,0,0,0.2), 0px -5px 8px rgba(0,0,0,0.2);
+}
+
+.sb1 {
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+.sb1:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid white;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+	border-bottom: 10px solid transparent;
+	right: -20px;
+	top: 6px;
+}
+
+.sb2 {
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+.sb2:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid white;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+	border-bottom: 10px solid transparent;
+	right: -20px;
+	top: 6px;
+}
+
+.sb3 {
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+.sb3:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid white;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+	border-bottom: 10px solid transparent;
+	right: -20px;
+	top: 6px;
+}
+
 
 .filler-section {
 	height: calc(100% - 5px);
@@ -47,17 +144,36 @@
 	background-color: #4C504F;
 	box-shadow: 0px 5px 8px rgba(0,0,0,0.2), 0px -5px 8px rgba(0,0,0,0.2);
 	text-align: center;
-	padding-right: 20%;
-	padding-left: 20%;
+	padding-right: 10%;
+	padding-left: 10%;
 	margin-bottom: 0;
+	width: 100vw;
+}
+
+.filler-section h1 {
+	color: red;
+}
+
+#sincity {
+	background-image: url(../images/marv_by_lohgz.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#sincity h1 {
+	color: red;
 }
 
 #woman {
 	background-color: #4A4B4C;
+	
+	background-position: top right;
 }
 
 .woman-container {
 	position: relative;
+	height: 100vh;
+	background-image: url(../images/ghost.jpg);
 
 }
 
@@ -73,14 +189,16 @@
 	color: red;
 }
 
-#woman-pic {
-	margin-left: auto;
-	margin-right: auto;
-	height: 100vh;
-	display: block;
-	width: auto;
-	background-image: url(../images/ghost.jpg);
-	background-size: contain;
+#woman-container img {
+	 
+	max-width: 100%;
+	max-height: 100%;
+/*	display: block;*/
+
+	background-size: cover;
+	object-fit: cover;
+	overflow: hidden;
+	background-position: center center;
 }
 
 .woman-animation {
@@ -92,11 +210,35 @@
 	color: red;
 }
 
+.right-float {
+	float: right;
+}
+
 #asylum {
 	height: 50vw;
 	background-image: url(../images/gatehouse.jpg);
-	background-size: contain;
+	background-size: cover;
 	background-color: #4A4B4C;
+}
+
+.tl-overlay {
+/*	margin-top: 50px;*/
+	margin-left: 10px;
+	-webkit-animation: fadeinout 4s linear;
+    animation: fadeinout 4s linear;
+    animation-iteration-count: infinite;
+}
+
+.tr-overlay {
+/*	margin-top: 50px;*/
+	margin-left: 10px;
+	opacity: 0;
+	-webkit-animation: fadeinout 4s linear;
+    animation: fadeinout 4s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    color: red;
+    animation-
 }
 
 #streets {
@@ -110,6 +252,8 @@
 	height: auto;
 	margin-top: 5px;
 	margin-bottom: 7px;
+	margin-right: 5px;
+	margin-left: 5px;
 
 }
 
@@ -117,6 +261,7 @@
 	width: 80%;
 	height: 100%;
 	text-align: center;
+
 }
 
 .quote-card p {
@@ -166,6 +311,35 @@
 	-webkit-animation: fadeIn 9s ease-out 1;
     animation: fadeIn 9s ease-out 1;
     animation-iteration-count:  ;
+}
+
+.history-offset {
+	margin-bottom: 100vh;
+}
+
+#history-box {
+	padding-left: 10px;
+	padding-bottom: 15px;
+	color: white;
+}
+
+#history-box h2 {
+	box-shadow: 0px 5px 8px rgba(0,0,0,0.2), 0px -5px 8px rgba(0,0,0,0.2);
+
+}
+
+#first-war {
+	background-image: url(../images/first-war.jpg);
+	background-size: contain;
+	background-color: black;
+}
+
+#first-war h3 {
+	padding-top: 30px;
+
+	text-align: center;
+	color: black;
+	text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 .fadeIn {
