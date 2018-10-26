@@ -377,12 +377,12 @@
 
 @-webkit-keyframes fadeOut {
   0% { opacity: 1; }
-  100% {opacity: 0.01; }
+  100% {opacity: 0.2; }
 }
 
 @keyframes fadeOut {
   0% { opacity: 1; }
-  100% {opacity: 0.01; }
+  100% {opacity: 0.2; }
 }
 
 @-webkit-keyframes fadeIn {
