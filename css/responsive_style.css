@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "Exocet_Light";
+	src: url('../fonts/Exocet-Light_16428.ttf');
+}
+
+.psfont {
+	font-family: "Exocet_Light";
+}
+
+.handwritten {
+	font-family: 'Homemade Apple', cursive;
+}
+
+.debatefont {
+	font-family: 'Rock Salt', cursive;
+}
+
+.navbar-light {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 99999;
+	background-color: transparent !important;
+}
+
+.top-buffer {
+	padding-top: 5%;
+	padding-left: 2%;
+}
+
+.chapter-title {
+	font-size: 22px;
+}
+
+.subtitle {
+	text-align: right;
+	font-size: 18px;
+}
+
+.expository {
+	text-align: right;
+	font-size: 14px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.quotes {
+	text-align: center;
+	font-size: 16px;
+}
+
+.quote-buffer {
+	padding-top: 2%;
+}
